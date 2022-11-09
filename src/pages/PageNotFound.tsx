@@ -1,5 +1,11 @@
+import { Outlet } from "react-router";
+
 const PageNotFound = () => {
-  return <></>;
+  return (
+    <div>
+      ???? Not found cmnr
+    </div>
+  );
 };
 
 export default PageNotFound;

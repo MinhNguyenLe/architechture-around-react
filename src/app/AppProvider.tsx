@@ -1,11 +1,11 @@
-import { PropsWithChildren } from "react";
 import { Provider } from "react-redux";
 import { store } from "../store/store";
+import AppRouter from "./AppRouter";
 
-interface AppProviderProps {}
 
-const AppProvider = ({ children }: PropsWithChildren<AppProviderProps>) => {
-  return <Provider store={store}>{children}</Provider>;
+const AppProvider = () => {
+  // return <Provider store={store}>{children}</Provider>;
+  return <AppRouter></AppRouter>;
 };
 
 export default AppProvider;
